@@ -40,8 +40,8 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.gymleaders", gymLeader)
         .build();
 
-      javaFile.writeTo(new File("app/src/main/java/"));
-      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+      javaFile.writeTo(new File("../app/src/main/java/"));
+      javaFile.writeTo(new File("../classgenerator/src/main/java/"));
     }
   }
 
@@ -65,8 +65,8 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.pokemonversion", version)
         .build();
 
-      javaFile.writeTo(new File("app/src/main/java/"));
-      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+      javaFile.writeTo(new File("../app/src/main/java/"));
+      javaFile.writeTo(new File("../classgenerator/src/main/java/"));
     }
   }
 
@@ -88,8 +88,8 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.trainer", trainer)
         .build();
 
-      javaFile.writeTo(new File("app/src/main/java/"));
-      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+      javaFile.writeTo(new File("../app/src/main/java/"));
+      javaFile.writeTo(new File("../classgenerator/src/main/java/"));
     }
   }
 
@@ -102,8 +102,8 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.pokemon", pokemon)
         .build();
 
-      javaFile.writeTo(new File("app/src/main/java/"));
-      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+      javaFile.writeTo(new File("../app/src/main/java/"));
+      javaFile.writeTo(new File("../classgenerator/src/main/java/"));
     }
   }
 }
