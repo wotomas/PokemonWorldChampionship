@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import javax.lang.model.element.Modifier;
 
@@ -15,22 +16,18 @@ public class Generator {
   public static void main(String[] args) throws IOException {
     System.out.println("PokemonWorldChampionship DI framework comparison code generation begins!");
 
-    MethodSpec main = MethodSpec.methodBuilder("main")
-      .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-      .returns(void.class)
-      .addParameter(String[].class, "args")
-      .addStatement("$T.out.println($S)", System.class, "Hello, JavaPoet!")
-      .build();
+    for(int i = 1; i < 7; i++) {
+      TypeSpec pokemon = TypeSpec.classBuilder("Pokemon" + i)
+        .addModifiers(Modifier.PUBLIC)
+        .build();
 
-    TypeSpec helloWorld = TypeSpec.classBuilder("HelloWorld")
-      .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
-      .addMethod(main)
-      .build();
+      JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.pokemon", pokemon)
+        .build();
 
-    JavaFile javaFile = JavaFile.builder("com.example.helloworld", helloWorld)
-      .build();
-
-    // File
-    javaFile.writeTo(new File(URI.create("../")));
+      // File
+      File newFile = new File("app/src/main/java/");
+      System.out.println("Path: " + newFile.getAbsolutePath() + " " + newFile.getName() + " ");
+      javaFile.writeTo(newFile);
+    }
   }
 }
