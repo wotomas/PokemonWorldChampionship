@@ -2,15 +2,10 @@ package com.example;
 
 import com.squareup.javapoet.FieldSpec;
 import com.squareup.javapoet.JavaFile;
-import com.squareup.javapoet.MethodSpec;
-import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import javax.inject.Inject;
 import javax.lang.model.element.Modifier;
@@ -21,10 +16,58 @@ public class Generator {
 
     createPokemon();
     createTrainers();
+    createPokemonVersions();
+    createGymLeaders();
+  }
 
+  private static void createGymLeaders() throws ClassNotFoundException, IOException {
+    for(int i = 1; i < 40; i++) {
+      TypeSpec.Builder gymLeaders = TypeSpec.classBuilder("GymLeaders" + i)
+        .addModifiers(Modifier.PUBLIC);
 
+      for(int j = 1; j < 20; j++) {
+        FieldSpec trainers = FieldSpec.builder(Class.forName("info.kimjihyok.pokemonworldchampionship.generated.trainer.Trainer" + j), "trainer" + j)
+          .addAnnotation(Inject.class)
+          .addModifiers(Modifier.PUBLIC)
+          .build();
 
+        gymLeaders.addField(trainers);
+      }
 
+      TypeSpec gymLeader = gymLeaders
+        .build();
+
+      JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.gymleaders", gymLeader)
+        .build();
+
+      javaFile.writeTo(new File("app/src/main/java/"));
+      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+    }
+  }
+
+  private static void createPokemonVersions() throws ClassNotFoundException, IOException {
+    for(int i = 1; i < 16; i++) {
+      TypeSpec.Builder pokemonVersion = TypeSpec.classBuilder("PokemonVersion" + i)
+        .addModifiers(Modifier.PUBLIC);
+
+      for(int j = 1; j < 801; j++) {
+        FieldSpec trainers = FieldSpec.builder(Class.forName("info.kimjihyok.pokemonworldchampionship.generated.trainer.Trainer" + j), "trainer" + j)
+          .addAnnotation(Inject.class)
+          .addModifiers(Modifier.PUBLIC)
+          .build();
+
+        pokemonVersion.addField(trainers);
+      }
+
+      TypeSpec version = pokemonVersion
+        .build();
+
+      JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.pokemonversion", version)
+        .build();
+
+      javaFile.writeTo(new File("app/src/main/java/"));
+      javaFile.writeTo(new File("classgenerator/src/main/java/"));
+    }
   }
 
   private static void createTrainers() throws IOException, ClassNotFoundException {
@@ -45,12 +88,8 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder("info.kimjihyok.pokemonworldchampionship.generated.trainer", trainer)
         .build();
 
-      // File
-      File newFile = new File("app/src/main/java/");
-      System.out.println("Path: " + newFile.getAbsolutePath() + " " + newFile.getName() + " ");
-      javaFile.writeTo(newFile);
-
-
+      javaFile.writeTo(new File("app/src/main/java/"));
+      javaFile.writeTo(new File("classgenerator/src/main/java/"));
     }
   }
 
@@ -64,6 +103,7 @@ public class Generator {
         .build();
 
       javaFile.writeTo(new File("app/src/main/java/"));
+      javaFile.writeTo(new File("classgenerator/src/main/java/"));
     }
   }
 }
