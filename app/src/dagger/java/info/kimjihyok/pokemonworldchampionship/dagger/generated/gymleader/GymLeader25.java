@@ -12,6 +12,7 @@ import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer1
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer18;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer19;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer2;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer20;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer3;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer4;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer5;
@@ -78,4 +79,7 @@ public class GymLeader25 {
 
   @Inject
   public Trainer19 trainer19;
+
+  @Inject
+  public Trainer20 trainer20;
 }

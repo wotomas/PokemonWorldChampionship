@@ -43,11 +43,11 @@ public class Generator {
   }
 
   private static void createGymLeaders() throws ClassNotFoundException, IOException {
-    for(int i = 1; i < 40; i++) {
+    for(int i = 1; i < 41; i++) {
       TypeSpec.Builder gymLeaders = TypeSpec.classBuilder(GYM_LEADER + i)
         .addModifiers(Modifier.PUBLIC);
 
-      for(int j = 1; j < 20; j++) {
+      for(int j = 1; j < 21; j++) {
         FieldSpec trainers = FieldSpec.builder(Class.forName(DAGGER_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
           .addAnnotation(Inject.class)
           .addModifiers(Modifier.PUBLIC)
