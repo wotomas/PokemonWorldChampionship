@@ -9,21 +9,26 @@ import info.kimjihyok.pokemonworldchampionship.dagger.generated.pokemon.Pokemon6
 import javax.inject.Inject;
 
 public class Trainer25 {
-  @Inject
   public Pokemon1 pokemon1;
 
-  @Inject
   public Pokemon2 pokemon2;
 
-  @Inject
   public Pokemon3 pokemon3;
 
-  @Inject
   public Pokemon4 pokemon4;
 
-  @Inject
   public Pokemon5 pokemon5;
 
-  @Inject
   public Pokemon6 pokemon6;
+
+  @Inject
+  public Trainer25(Pokemon1 pokemon1, Pokemon2 pokemon2, Pokemon3 pokemon3, Pokemon4 pokemon4,
+      Pokemon5 pokemon5, Pokemon6 pokemon6) {
+    this.pokemon1 = pokemon1;
+    this.pokemon2 = pokemon2;
+    this.pokemon3 = pokemon3;
+    this.pokemon4 = pokemon4;
+    this.pokemon5 = pokemon5;
+    this.pokemon6 = pokemon6;
+  }
 }

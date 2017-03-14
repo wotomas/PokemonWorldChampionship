@@ -1,11 +1,659 @@
 package info.kimjihyok.pokemonworldchampionship.dagger.generated.pokemonversion;
 
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer1;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer10;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer100;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer101;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer102;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer103;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer104;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer105;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer106;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer107;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer108;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer109;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer11;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer110;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer111;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer112;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer113;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer114;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer115;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer116;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer117;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer118;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer119;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer12;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer120;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer121;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer122;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer123;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer124;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer125;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer126;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer127;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer128;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer129;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer13;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer130;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer131;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer132;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer133;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer134;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer135;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer136;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer137;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer138;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer139;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer14;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer140;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer141;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer142;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer143;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer144;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer145;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer146;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer147;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer148;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer149;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer15;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer150;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer151;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer152;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer153;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer154;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer155;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer156;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer157;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer158;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer159;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer16;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer160;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer161;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer162;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer163;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer164;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer165;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer166;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer167;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer168;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer169;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer17;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer170;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer171;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer172;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer173;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer174;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer175;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer176;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer177;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer178;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer179;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer18;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer180;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer181;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer182;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer183;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer184;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer185;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer186;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer187;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer188;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer189;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer19;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer190;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer191;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer192;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer193;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer194;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer195;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer196;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer197;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer198;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer199;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer2;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer20;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer200;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer21;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer22;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer23;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer24;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer25;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer26;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer27;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer28;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer29;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer3;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer30;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer31;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer32;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer33;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer34;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer35;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer36;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer37;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer38;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer39;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer4;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer40;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer41;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer42;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer43;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer44;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer45;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer46;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer47;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer48;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer49;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer5;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer50;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer51;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer52;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer53;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer54;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer55;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer56;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer57;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer58;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer59;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer6;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer60;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer61;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer62;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer63;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer64;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer65;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer66;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer67;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer68;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer69;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer7;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer70;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer71;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer72;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer73;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer74;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer75;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer76;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer77;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer78;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer79;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer8;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer80;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer81;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer82;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer83;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer84;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer85;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer86;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer87;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer88;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer89;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer9;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer90;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer91;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer92;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer93;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer94;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer95;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer96;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer97;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer98;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer99;
 import javax.inject.Inject;
 
-import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.*;
-
 public class PokemonVersion14 {
-  public PokemonVersion14(Trainer1 trainer1, Trainer2 trainer2, Trainer3 trainer3, Trainer4 trainer4, Trainer5 trainer5, Trainer6 trainer6, Trainer7 trainer7, Trainer8 trainer8, Trainer9 trainer9, Trainer10 trainer10, Trainer11 trainer11, Trainer12 trainer12, Trainer13 trainer13, Trainer14 trainer14, Trainer15 trainer15, Trainer16 trainer16, Trainer17 trainer17, Trainer18 trainer18, Trainer19 trainer19, Trainer20 trainer20, Trainer21 trainer21, Trainer22 trainer22, Trainer23 trainer23, Trainer24 trainer24, Trainer25 trainer25, Trainer26 trainer26, Trainer27 trainer27, Trainer28 trainer28, Trainer29 trainer29, Trainer30 trainer30, Trainer31 trainer31, Trainer32 trainer32, Trainer33 trainer33, Trainer34 trainer34, Trainer35 trainer35, Trainer36 trainer36, Trainer37 trainer37, Trainer38 trainer38, Trainer39 trainer39, Trainer40 trainer40, Trainer41 trainer41, Trainer42 trainer42, Trainer43 trainer43, Trainer44 trainer44, Trainer45 trainer45, Trainer46 trainer46, Trainer47 trainer47, Trainer48 trainer48, Trainer49 trainer49, Trainer50 trainer50, Trainer51 trainer51, Trainer52 trainer52, Trainer53 trainer53, Trainer54 trainer54, Trainer55 trainer55, Trainer56 trainer56, Trainer57 trainer57, Trainer58 trainer58, Trainer59 trainer59, Trainer60 trainer60, Trainer61 trainer61, Trainer62 trainer62, Trainer63 trainer63, Trainer64 trainer64, Trainer65 trainer65, Trainer66 trainer66, Trainer67 trainer67, Trainer68 trainer68, Trainer69 trainer69, Trainer70 trainer70, Trainer71 trainer71, Trainer72 trainer72, Trainer73 trainer73, Trainer74 trainer74, Trainer75 trainer75, Trainer76 trainer76, Trainer77 trainer77, Trainer78 trainer78, Trainer79 trainer79, Trainer80 trainer80, Trainer81 trainer81, Trainer82 trainer82, Trainer83 trainer83, Trainer84 trainer84, Trainer85 trainer85, Trainer86 trainer86, Trainer87 trainer87, Trainer88 trainer88, Trainer89 trainer89, Trainer90 trainer90, Trainer91 trainer91, Trainer92 trainer92, Trainer93 trainer93, Trainer94 trainer94, Trainer95 trainer95, Trainer96 trainer96, Trainer97 trainer97, Trainer98 trainer98, Trainer99 trainer99, Trainer100 trainer100, Trainer101 trainer101, Trainer102 trainer102, Trainer103 trainer103, Trainer104 trainer104, Trainer105 trainer105, Trainer106 trainer106, Trainer107 trainer107, Trainer108 trainer108, Trainer109 trainer109, Trainer110 trainer110, Trainer111 trainer111, Trainer112 trainer112, Trainer113 trainer113, Trainer114 trainer114, Trainer115 trainer115, Trainer116 trainer116, Trainer117 trainer117, Trainer118 trainer118, Trainer119 trainer119, Trainer120 trainer120, Trainer121 trainer121, Trainer122 trainer122, Trainer123 trainer123, Trainer124 trainer124, Trainer125 trainer125, Trainer126 trainer126, Trainer127 trainer127, Trainer128 trainer128, Trainer129 trainer129, Trainer130 trainer130, Trainer131 trainer131, Trainer132 trainer132, Trainer133 trainer133, Trainer134 trainer134, Trainer135 trainer135, Trainer136 trainer136, Trainer137 trainer137, Trainer138 trainer138, Trainer139 trainer139, Trainer140 trainer140, Trainer141 trainer141, Trainer142 trainer142, Trainer143 trainer143, Trainer144 trainer144, Trainer145 trainer145, Trainer146 trainer146, Trainer147 trainer147, Trainer148 trainer148, Trainer149 trainer149, Trainer150 trainer150, Trainer151 trainer151, Trainer152 trainer152, Trainer153 trainer153, Trainer154 trainer154, Trainer155 trainer155, Trainer156 trainer156, Trainer157 trainer157, Trainer158 trainer158, Trainer159 trainer159, Trainer160 trainer160, Trainer161 trainer161, Trainer162 trainer162, Trainer163 trainer163, Trainer164 trainer164, Trainer165 trainer165, Trainer166 trainer166, Trainer167 trainer167, Trainer168 trainer168, Trainer169 trainer169, Trainer170 trainer170, Trainer171 trainer171, Trainer172 trainer172, Trainer173 trainer173, Trainer174 trainer174, Trainer175 trainer175, Trainer176 trainer176, Trainer177 trainer177, Trainer178 trainer178, Trainer179 trainer179, Trainer180 trainer180, Trainer181 trainer181, Trainer182 trainer182, Trainer183 trainer183, Trainer184 trainer184, Trainer185 trainer185, Trainer186 trainer186, Trainer187 trainer187, Trainer188 trainer188, Trainer189 trainer189, Trainer190 trainer190, Trainer191 trainer191, Trainer192 trainer192, Trainer193 trainer193, Trainer194 trainer194, Trainer195 trainer195, Trainer196 trainer196, Trainer197 trainer197, Trainer198 trainer198, Trainer199 trainer199, Trainer200 trainer200, Trainer201 trainer201) {
+  public Trainer1 trainer1;
+
+  public Trainer2 trainer2;
+
+  public Trainer3 trainer3;
+
+  public Trainer4 trainer4;
+
+  public Trainer5 trainer5;
+
+  public Trainer6 trainer6;
+
+  public Trainer7 trainer7;
+
+  public Trainer8 trainer8;
+
+  public Trainer9 trainer9;
+
+  public Trainer10 trainer10;
+
+  public Trainer11 trainer11;
+
+  public Trainer12 trainer12;
+
+  public Trainer13 trainer13;
+
+  public Trainer14 trainer14;
+
+  public Trainer15 trainer15;
+
+  public Trainer16 trainer16;
+
+  public Trainer17 trainer17;
+
+  public Trainer18 trainer18;
+
+  public Trainer19 trainer19;
+
+  public Trainer20 trainer20;
+
+  public Trainer21 trainer21;
+
+  public Trainer22 trainer22;
+
+  public Trainer23 trainer23;
+
+  public Trainer24 trainer24;
+
+  public Trainer25 trainer25;
+
+  public Trainer26 trainer26;
+
+  public Trainer27 trainer27;
+
+  public Trainer28 trainer28;
+
+  public Trainer29 trainer29;
+
+  public Trainer30 trainer30;
+
+  public Trainer31 trainer31;
+
+  public Trainer32 trainer32;
+
+  public Trainer33 trainer33;
+
+  public Trainer34 trainer34;
+
+  public Trainer35 trainer35;
+
+  public Trainer36 trainer36;
+
+  public Trainer37 trainer37;
+
+  public Trainer38 trainer38;
+
+  public Trainer39 trainer39;
+
+  public Trainer40 trainer40;
+
+  public Trainer41 trainer41;
+
+  public Trainer42 trainer42;
+
+  public Trainer43 trainer43;
+
+  public Trainer44 trainer44;
+
+  public Trainer45 trainer45;
+
+  public Trainer46 trainer46;
+
+  public Trainer47 trainer47;
+
+  public Trainer48 trainer48;
+
+  public Trainer49 trainer49;
+
+  public Trainer50 trainer50;
+
+  public Trainer51 trainer51;
+
+  public Trainer52 trainer52;
+
+  public Trainer53 trainer53;
+
+  public Trainer54 trainer54;
+
+  public Trainer55 trainer55;
+
+  public Trainer56 trainer56;
+
+  public Trainer57 trainer57;
+
+  public Trainer58 trainer58;
+
+  public Trainer59 trainer59;
+
+  public Trainer60 trainer60;
+
+  public Trainer61 trainer61;
+
+  public Trainer62 trainer62;
+
+  public Trainer63 trainer63;
+
+  public Trainer64 trainer64;
+
+  public Trainer65 trainer65;
+
+  public Trainer66 trainer66;
+
+  public Trainer67 trainer67;
+
+  public Trainer68 trainer68;
+
+  public Trainer69 trainer69;
+
+  public Trainer70 trainer70;
+
+  public Trainer71 trainer71;
+
+  public Trainer72 trainer72;
+
+  public Trainer73 trainer73;
+
+  public Trainer74 trainer74;
+
+  public Trainer75 trainer75;
+
+  public Trainer76 trainer76;
+
+  public Trainer77 trainer77;
+
+  public Trainer78 trainer78;
+
+  public Trainer79 trainer79;
+
+  public Trainer80 trainer80;
+
+  public Trainer81 trainer81;
+
+  public Trainer82 trainer82;
+
+  public Trainer83 trainer83;
+
+  public Trainer84 trainer84;
+
+  public Trainer85 trainer85;
+
+  public Trainer86 trainer86;
+
+  public Trainer87 trainer87;
+
+  public Trainer88 trainer88;
+
+  public Trainer89 trainer89;
+
+  public Trainer90 trainer90;
+
+  public Trainer91 trainer91;
+
+  public Trainer92 trainer92;
+
+  public Trainer93 trainer93;
+
+  public Trainer94 trainer94;
+
+  public Trainer95 trainer95;
+
+  public Trainer96 trainer96;
+
+  public Trainer97 trainer97;
+
+  public Trainer98 trainer98;
+
+  public Trainer99 trainer99;
+
+  public Trainer100 trainer100;
+
+  public Trainer101 trainer101;
+
+  public Trainer102 trainer102;
+
+  public Trainer103 trainer103;
+
+  public Trainer104 trainer104;
+
+  public Trainer105 trainer105;
+
+  public Trainer106 trainer106;
+
+  public Trainer107 trainer107;
+
+  public Trainer108 trainer108;
+
+  public Trainer109 trainer109;
+
+  public Trainer110 trainer110;
+
+  public Trainer111 trainer111;
+
+  public Trainer112 trainer112;
+
+  public Trainer113 trainer113;
+
+  public Trainer114 trainer114;
+
+  public Trainer115 trainer115;
+
+  public Trainer116 trainer116;
+
+  public Trainer117 trainer117;
+
+  public Trainer118 trainer118;
+
+  public Trainer119 trainer119;
+
+  public Trainer120 trainer120;
+
+  public Trainer121 trainer121;
+
+  public Trainer122 trainer122;
+
+  public Trainer123 trainer123;
+
+  public Trainer124 trainer124;
+
+  public Trainer125 trainer125;
+
+  public Trainer126 trainer126;
+
+  public Trainer127 trainer127;
+
+  public Trainer128 trainer128;
+
+  public Trainer129 trainer129;
+
+  public Trainer130 trainer130;
+
+  public Trainer131 trainer131;
+
+  public Trainer132 trainer132;
+
+  public Trainer133 trainer133;
+
+  public Trainer134 trainer134;
+
+  public Trainer135 trainer135;
+
+  public Trainer136 trainer136;
+
+  public Trainer137 trainer137;
+
+  public Trainer138 trainer138;
+
+  public Trainer139 trainer139;
+
+  public Trainer140 trainer140;
+
+  public Trainer141 trainer141;
+
+  public Trainer142 trainer142;
+
+  public Trainer143 trainer143;
+
+  public Trainer144 trainer144;
+
+  public Trainer145 trainer145;
+
+  public Trainer146 trainer146;
+
+  public Trainer147 trainer147;
+
+  public Trainer148 trainer148;
+
+  public Trainer149 trainer149;
+
+  public Trainer150 trainer150;
+
+  public Trainer151 trainer151;
+
+  public Trainer152 trainer152;
+
+  public Trainer153 trainer153;
+
+  public Trainer154 trainer154;
+
+  public Trainer155 trainer155;
+
+  public Trainer156 trainer156;
+
+  public Trainer157 trainer157;
+
+  public Trainer158 trainer158;
+
+  public Trainer159 trainer159;
+
+  public Trainer160 trainer160;
+
+  public Trainer161 trainer161;
+
+  public Trainer162 trainer162;
+
+  public Trainer163 trainer163;
+
+  public Trainer164 trainer164;
+
+  public Trainer165 trainer165;
+
+  public Trainer166 trainer166;
+
+  public Trainer167 trainer167;
+
+  public Trainer168 trainer168;
+
+  public Trainer169 trainer169;
+
+  public Trainer170 trainer170;
+
+  public Trainer171 trainer171;
+
+  public Trainer172 trainer172;
+
+  public Trainer173 trainer173;
+
+  public Trainer174 trainer174;
+
+  public Trainer175 trainer175;
+
+  public Trainer176 trainer176;
+
+  public Trainer177 trainer177;
+
+  public Trainer178 trainer178;
+
+  public Trainer179 trainer179;
+
+  public Trainer180 trainer180;
+
+  public Trainer181 trainer181;
+
+  public Trainer182 trainer182;
+
+  public Trainer183 trainer183;
+
+  public Trainer184 trainer184;
+
+  public Trainer185 trainer185;
+
+  public Trainer186 trainer186;
+
+  public Trainer187 trainer187;
+
+  public Trainer188 trainer188;
+
+  public Trainer189 trainer189;
+
+  public Trainer190 trainer190;
+
+  public Trainer191 trainer191;
+
+  public Trainer192 trainer192;
+
+  public Trainer193 trainer193;
+
+  public Trainer194 trainer194;
+
+  public Trainer195 trainer195;
+
+  public Trainer196 trainer196;
+
+  public Trainer197 trainer197;
+
+  public Trainer198 trainer198;
+
+  public Trainer199 trainer199;
+
+  public Trainer200 trainer200;
+
+  @Inject
+  public PokemonVersion14(Trainer1 trainer1, Trainer2 trainer2, Trainer3 trainer3,
+      Trainer4 trainer4, Trainer5 trainer5, Trainer6 trainer6, Trainer7 trainer7, Trainer8 trainer8,
+      Trainer9 trainer9, Trainer10 trainer10, Trainer11 trainer11, Trainer12 trainer12,
+      Trainer13 trainer13, Trainer14 trainer14, Trainer15 trainer15, Trainer16 trainer16,
+      Trainer17 trainer17, Trainer18 trainer18, Trainer19 trainer19, Trainer20 trainer20,
+      Trainer21 trainer21, Trainer22 trainer22, Trainer23 trainer23, Trainer24 trainer24,
+      Trainer25 trainer25, Trainer26 trainer26, Trainer27 trainer27, Trainer28 trainer28,
+      Trainer29 trainer29, Trainer30 trainer30, Trainer31 trainer31, Trainer32 trainer32,
+      Trainer33 trainer33, Trainer34 trainer34, Trainer35 trainer35, Trainer36 trainer36,
+      Trainer37 trainer37, Trainer38 trainer38, Trainer39 trainer39, Trainer40 trainer40,
+      Trainer41 trainer41, Trainer42 trainer42, Trainer43 trainer43, Trainer44 trainer44,
+      Trainer45 trainer45, Trainer46 trainer46, Trainer47 trainer47, Trainer48 trainer48,
+      Trainer49 trainer49, Trainer50 trainer50, Trainer51 trainer51, Trainer52 trainer52,
+      Trainer53 trainer53, Trainer54 trainer54, Trainer55 trainer55, Trainer56 trainer56,
+      Trainer57 trainer57, Trainer58 trainer58, Trainer59 trainer59, Trainer60 trainer60,
+      Trainer61 trainer61, Trainer62 trainer62, Trainer63 trainer63, Trainer64 trainer64,
+      Trainer65 trainer65, Trainer66 trainer66, Trainer67 trainer67, Trainer68 trainer68,
+      Trainer69 trainer69, Trainer70 trainer70, Trainer71 trainer71, Trainer72 trainer72,
+      Trainer73 trainer73, Trainer74 trainer74, Trainer75 trainer75, Trainer76 trainer76,
+      Trainer77 trainer77, Trainer78 trainer78, Trainer79 trainer79, Trainer80 trainer80,
+      Trainer81 trainer81, Trainer82 trainer82, Trainer83 trainer83, Trainer84 trainer84,
+      Trainer85 trainer85, Trainer86 trainer86, Trainer87 trainer87, Trainer88 trainer88,
+      Trainer89 trainer89, Trainer90 trainer90, Trainer91 trainer91, Trainer92 trainer92,
+      Trainer93 trainer93, Trainer94 trainer94, Trainer95 trainer95, Trainer96 trainer96,
+      Trainer97 trainer97, Trainer98 trainer98, Trainer99 trainer99, Trainer100 trainer100,
+      Trainer101 trainer101, Trainer102 trainer102, Trainer103 trainer103, Trainer104 trainer104,
+      Trainer105 trainer105, Trainer106 trainer106, Trainer107 trainer107, Trainer108 trainer108,
+      Trainer109 trainer109, Trainer110 trainer110, Trainer111 trainer111, Trainer112 trainer112,
+      Trainer113 trainer113, Trainer114 trainer114, Trainer115 trainer115, Trainer116 trainer116,
+      Trainer117 trainer117, Trainer118 trainer118, Trainer119 trainer119, Trainer120 trainer120,
+      Trainer121 trainer121, Trainer122 trainer122, Trainer123 trainer123, Trainer124 trainer124,
+      Trainer125 trainer125, Trainer126 trainer126, Trainer127 trainer127, Trainer128 trainer128,
+      Trainer129 trainer129, Trainer130 trainer130, Trainer131 trainer131, Trainer132 trainer132,
+      Trainer133 trainer133, Trainer134 trainer134, Trainer135 trainer135, Trainer136 trainer136,
+      Trainer137 trainer137, Trainer138 trainer138, Trainer139 trainer139, Trainer140 trainer140,
+      Trainer141 trainer141, Trainer142 trainer142, Trainer143 trainer143, Trainer144 trainer144,
+      Trainer145 trainer145, Trainer146 trainer146, Trainer147 trainer147, Trainer148 trainer148,
+      Trainer149 trainer149, Trainer150 trainer150, Trainer151 trainer151, Trainer152 trainer152,
+      Trainer153 trainer153, Trainer154 trainer154, Trainer155 trainer155, Trainer156 trainer156,
+      Trainer157 trainer157, Trainer158 trainer158, Trainer159 trainer159, Trainer160 trainer160,
+      Trainer161 trainer161, Trainer162 trainer162, Trainer163 trainer163, Trainer164 trainer164,
+      Trainer165 trainer165, Trainer166 trainer166, Trainer167 trainer167, Trainer168 trainer168,
+      Trainer169 trainer169, Trainer170 trainer170, Trainer171 trainer171, Trainer172 trainer172,
+      Trainer173 trainer173, Trainer174 trainer174, Trainer175 trainer175, Trainer176 trainer176,
+      Trainer177 trainer177, Trainer178 trainer178, Trainer179 trainer179, Trainer180 trainer180,
+      Trainer181 trainer181, Trainer182 trainer182, Trainer183 trainer183, Trainer184 trainer184,
+      Trainer185 trainer185, Trainer186 trainer186, Trainer187 trainer187, Trainer188 trainer188,
+      Trainer189 trainer189, Trainer190 trainer190, Trainer191 trainer191, Trainer192 trainer192,
+      Trainer193 trainer193, Trainer194 trainer194, Trainer195 trainer195, Trainer196 trainer196,
+      Trainer197 trainer197, Trainer198 trainer198, Trainer199 trainer199, Trainer200 trainer200) {
     this.trainer1 = trainer1;
     this.trainer2 = trainer2;
     this.trainer3 = trainer3;
@@ -206,609 +854,5 @@ public class PokemonVersion14 {
     this.trainer198 = trainer198;
     this.trainer199 = trainer199;
     this.trainer200 = trainer200;
-    this.trainer201 = trainer201;
   }
-
-  @Inject
-  public Trainer1 trainer1;
-
-  @Inject
-  public Trainer2 trainer2;
-
-  @Inject
-  public Trainer3 trainer3;
-
-  @Inject
-  public Trainer4 trainer4;
-
-  @Inject
-  public Trainer5 trainer5;
-
-  @Inject
-  public Trainer6 trainer6;
-
-  @Inject
-  public Trainer7 trainer7;
-
-  @Inject
-  public Trainer8 trainer8;
-
-  @Inject
-  public Trainer9 trainer9;
-
-  @Inject
-  public Trainer10 trainer10;
-
-  @Inject
-  public Trainer11 trainer11;
-
-  @Inject
-  public Trainer12 trainer12;
-
-  @Inject
-  public Trainer13 trainer13;
-
-  @Inject
-  public Trainer14 trainer14;
-
-  @Inject
-  public Trainer15 trainer15;
-
-  @Inject
-  public Trainer16 trainer16;
-
-  @Inject
-  public Trainer17 trainer17;
-
-  @Inject
-  public Trainer18 trainer18;
-
-  @Inject
-  public Trainer19 trainer19;
-
-  @Inject
-  public Trainer20 trainer20;
-
-  @Inject
-  public Trainer21 trainer21;
-
-  @Inject
-  public Trainer22 trainer22;
-
-  @Inject
-  public Trainer23 trainer23;
-
-  @Inject
-  public Trainer24 trainer24;
-
-  @Inject
-  public Trainer25 trainer25;
-
-  @Inject
-  public Trainer26 trainer26;
-
-  @Inject
-  public Trainer27 trainer27;
-
-  @Inject
-  public Trainer28 trainer28;
-
-  @Inject
-  public Trainer29 trainer29;
-
-  @Inject
-  public Trainer30 trainer30;
-
-  @Inject
-  public Trainer31 trainer31;
-
-  @Inject
-  public Trainer32 trainer32;
-
-  @Inject
-  public Trainer33 trainer33;
-
-  @Inject
-  public Trainer34 trainer34;
-
-  @Inject
-  public Trainer35 trainer35;
-
-  @Inject
-  public Trainer36 trainer36;
-
-  @Inject
-  public Trainer37 trainer37;
-
-  @Inject
-  public Trainer38 trainer38;
-
-  @Inject
-  public Trainer39 trainer39;
-
-  @Inject
-  public Trainer40 trainer40;
-
-  @Inject
-  public Trainer41 trainer41;
-
-  @Inject
-  public Trainer42 trainer42;
-
-  @Inject
-  public Trainer43 trainer43;
-
-  @Inject
-  public Trainer44 trainer44;
-
-  @Inject
-  public Trainer45 trainer45;
-
-  @Inject
-  public Trainer46 trainer46;
-
-  @Inject
-  public Trainer47 trainer47;
-
-  @Inject
-  public Trainer48 trainer48;
-
-  @Inject
-  public Trainer49 trainer49;
-
-  @Inject
-  public Trainer50 trainer50;
-
-  @Inject
-  public Trainer51 trainer51;
-
-  @Inject
-  public Trainer52 trainer52;
-
-  @Inject
-  public Trainer53 trainer53;
-
-  @Inject
-  public Trainer54 trainer54;
-
-  @Inject
-  public Trainer55 trainer55;
-
-  @Inject
-  public Trainer56 trainer56;
-
-  @Inject
-  public Trainer57 trainer57;
-
-  @Inject
-  public Trainer58 trainer58;
-
-  @Inject
-  public Trainer59 trainer59;
-
-  @Inject
-  public Trainer60 trainer60;
-
-  @Inject
-  public Trainer61 trainer61;
-
-  @Inject
-  public Trainer62 trainer62;
-
-  @Inject
-  public Trainer63 trainer63;
-
-  @Inject
-  public Trainer64 trainer64;
-
-  @Inject
-  public Trainer65 trainer65;
-
-  @Inject
-  public Trainer66 trainer66;
-
-  @Inject
-  public Trainer67 trainer67;
-
-  @Inject
-  public Trainer68 trainer68;
-
-  @Inject
-  public Trainer69 trainer69;
-
-  @Inject
-  public Trainer70 trainer70;
-
-  @Inject
-  public Trainer71 trainer71;
-
-  @Inject
-  public Trainer72 trainer72;
-
-  @Inject
-  public Trainer73 trainer73;
-
-  @Inject
-  public Trainer74 trainer74;
-
-  @Inject
-  public Trainer75 trainer75;
-
-  @Inject
-  public Trainer76 trainer76;
-
-  @Inject
-  public Trainer77 trainer77;
-
-  @Inject
-  public Trainer78 trainer78;
-
-  @Inject
-  public Trainer79 trainer79;
-
-  @Inject
-  public Trainer80 trainer80;
-
-  @Inject
-  public Trainer81 trainer81;
-
-  @Inject
-  public Trainer82 trainer82;
-
-  @Inject
-  public Trainer83 trainer83;
-
-  @Inject
-  public Trainer84 trainer84;
-
-  @Inject
-  public Trainer85 trainer85;
-
-  @Inject
-  public Trainer86 trainer86;
-
-  @Inject
-  public Trainer87 trainer87;
-
-  @Inject
-  public Trainer88 trainer88;
-
-  @Inject
-  public Trainer89 trainer89;
-
-  @Inject
-  public Trainer90 trainer90;
-
-  @Inject
-  public Trainer91 trainer91;
-
-  @Inject
-  public Trainer92 trainer92;
-
-  @Inject
-  public Trainer93 trainer93;
-
-  @Inject
-  public Trainer94 trainer94;
-
-  @Inject
-  public Trainer95 trainer95;
-
-  @Inject
-  public Trainer96 trainer96;
-
-  @Inject
-  public Trainer97 trainer97;
-
-  @Inject
-  public Trainer98 trainer98;
-
-  @Inject
-  public Trainer99 trainer99;
-
-  @Inject
-  public Trainer100 trainer100;
-
-  @Inject
-  public Trainer101 trainer101;
-
-  @Inject
-  public Trainer102 trainer102;
-
-  @Inject
-  public Trainer103 trainer103;
-
-  @Inject
-  public Trainer104 trainer104;
-
-  @Inject
-  public Trainer105 trainer105;
-
-  @Inject
-  public Trainer106 trainer106;
-
-  @Inject
-  public Trainer107 trainer107;
-
-  @Inject
-  public Trainer108 trainer108;
-
-  @Inject
-  public Trainer109 trainer109;
-
-  @Inject
-  public Trainer110 trainer110;
-
-  @Inject
-  public Trainer111 trainer111;
-
-  @Inject
-  public Trainer112 trainer112;
-
-  @Inject
-  public Trainer113 trainer113;
-
-  @Inject
-  public Trainer114 trainer114;
-
-  @Inject
-  public Trainer115 trainer115;
-
-  @Inject
-  public Trainer116 trainer116;
-
-  @Inject
-  public Trainer117 trainer117;
-
-  @Inject
-  public Trainer118 trainer118;
-
-  @Inject
-  public Trainer119 trainer119;
-
-  @Inject
-  public Trainer120 trainer120;
-
-  @Inject
-  public Trainer121 trainer121;
-
-  @Inject
-  public Trainer122 trainer122;
-
-  @Inject
-  public Trainer123 trainer123;
-
-  @Inject
-  public Trainer124 trainer124;
-
-  @Inject
-  public Trainer125 trainer125;
-
-  @Inject
-  public Trainer126 trainer126;
-
-  @Inject
-  public Trainer127 trainer127;
-
-  @Inject
-  public Trainer128 trainer128;
-
-  @Inject
-  public Trainer129 trainer129;
-
-  @Inject
-  public Trainer130 trainer130;
-
-  @Inject
-  public Trainer131 trainer131;
-
-  @Inject
-  public Trainer132 trainer132;
-
-  @Inject
-  public Trainer133 trainer133;
-
-  @Inject
-  public Trainer134 trainer134;
-
-  @Inject
-  public Trainer135 trainer135;
-
-  @Inject
-  public Trainer136 trainer136;
-
-  @Inject
-  public Trainer137 trainer137;
-
-  @Inject
-  public Trainer138 trainer138;
-
-  @Inject
-  public Trainer139 trainer139;
-
-  @Inject
-  public Trainer140 trainer140;
-
-  @Inject
-  public Trainer141 trainer141;
-
-  @Inject
-  public Trainer142 trainer142;
-
-  @Inject
-  public Trainer143 trainer143;
-
-  @Inject
-  public Trainer144 trainer144;
-
-  @Inject
-  public Trainer145 trainer145;
-
-  @Inject
-  public Trainer146 trainer146;
-
-  @Inject
-  public Trainer147 trainer147;
-
-  @Inject
-  public Trainer148 trainer148;
-
-  @Inject
-  public Trainer149 trainer149;
-
-  @Inject
-  public Trainer150 trainer150;
-
-  @Inject
-  public Trainer151 trainer151;
-
-  @Inject
-  public Trainer152 trainer152;
-
-  @Inject
-  public Trainer153 trainer153;
-
-  @Inject
-  public Trainer154 trainer154;
-
-  @Inject
-  public Trainer155 trainer155;
-
-  @Inject
-  public Trainer156 trainer156;
-
-  @Inject
-  public Trainer157 trainer157;
-
-  @Inject
-  public Trainer158 trainer158;
-
-  @Inject
-  public Trainer159 trainer159;
-
-  @Inject
-  public Trainer160 trainer160;
-
-  @Inject
-  public Trainer161 trainer161;
-
-  @Inject
-  public Trainer162 trainer162;
-
-  @Inject
-  public Trainer163 trainer163;
-
-  @Inject
-  public Trainer164 trainer164;
-
-  @Inject
-  public Trainer165 trainer165;
-
-  @Inject
-  public Trainer166 trainer166;
-
-  @Inject
-  public Trainer167 trainer167;
-
-  @Inject
-  public Trainer168 trainer168;
-
-  @Inject
-  public Trainer169 trainer169;
-
-  @Inject
-  public Trainer170 trainer170;
-
-  @Inject
-  public Trainer171 trainer171;
-
-  @Inject
-  public Trainer172 trainer172;
-
-  @Inject
-  public Trainer173 trainer173;
-
-  @Inject
-  public Trainer174 trainer174;
-
-  @Inject
-  public Trainer175 trainer175;
-
-  @Inject
-  public Trainer176 trainer176;
-
-  @Inject
-  public Trainer177 trainer177;
-
-  @Inject
-  public Trainer178 trainer178;
-
-  @Inject
-  public Trainer179 trainer179;
-
-  @Inject
-  public Trainer180 trainer180;
-
-  @Inject
-  public Trainer181 trainer181;
-
-  @Inject
-  public Trainer182 trainer182;
-
-  @Inject
-  public Trainer183 trainer183;
-
-  @Inject
-  public Trainer184 trainer184;
-
-  @Inject
-  public Trainer185 trainer185;
-
-  @Inject
-  public Trainer186 trainer186;
-
-  @Inject
-  public Trainer187 trainer187;
-
-  @Inject
-  public Trainer188 trainer188;
-
-  @Inject
-  public Trainer189 trainer189;
-
-  @Inject
-  public Trainer190 trainer190;
-
-  @Inject
-  public Trainer191 trainer191;
-
-  @Inject
-  public Trainer192 trainer192;
-
-  @Inject
-  public Trainer193 trainer193;
-
-  @Inject
-  public Trainer194 trainer194;
-
-  @Inject
-  public Trainer195 trainer195;
-
-  @Inject
-  public Trainer196 trainer196;
-
-  @Inject
-  public Trainer197 trainer197;
-
-  @Inject
-  public Trainer198 trainer198;
-
-  @Inject
-  public Trainer199 trainer199;
-
-  @Inject
-  public Trainer200 trainer200;
-
-  @Inject
-  public Trainer201 trainer201;
 }

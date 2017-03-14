@@ -23,63 +23,71 @@ import info.kimjihyok.pokemonworldchampionship.dagger.generated.trainer.Trainer9
 import javax.inject.Inject;
 
 public class GymLeader6 {
-  @Inject
   public Trainer1 trainer1;
 
-  @Inject
   public Trainer2 trainer2;
 
-  @Inject
   public Trainer3 trainer3;
 
-  @Inject
   public Trainer4 trainer4;
 
-  @Inject
   public Trainer5 trainer5;
 
-  @Inject
   public Trainer6 trainer6;
 
-  @Inject
   public Trainer7 trainer7;
 
-  @Inject
   public Trainer8 trainer8;
 
-  @Inject
   public Trainer9 trainer9;
 
-  @Inject
   public Trainer10 trainer10;
 
-  @Inject
   public Trainer11 trainer11;
 
-  @Inject
   public Trainer12 trainer12;
 
-  @Inject
   public Trainer13 trainer13;
 
-  @Inject
   public Trainer14 trainer14;
 
-  @Inject
   public Trainer15 trainer15;
 
-  @Inject
   public Trainer16 trainer16;
 
-  @Inject
   public Trainer17 trainer17;
 
-  @Inject
   public Trainer18 trainer18;
 
-  @Inject
   public Trainer19 trainer19;
 
-  @Inject
   public Trainer20 trainer20;
+
+  @Inject
+  public GymLeader6(Trainer1 trainer1, Trainer2 trainer2, Trainer3 trainer3, Trainer4 trainer4,
+      Trainer5 trainer5, Trainer6 trainer6, Trainer7 trainer7, Trainer8 trainer8, Trainer9 trainer9,
+      Trainer10 trainer10, Trainer11 trainer11, Trainer12 trainer12, Trainer13 trainer13,
+      Trainer14 trainer14, Trainer15 trainer15, Trainer16 trainer16, Trainer17 trainer17,
+      Trainer18 trainer18, Trainer19 trainer19, Trainer20 trainer20) {
+    this.trainer1 = trainer1;
+    this.trainer2 = trainer2;
+    this.trainer3 = trainer3;
+    this.trainer4 = trainer4;
+    this.trainer5 = trainer5;
+    this.trainer6 = trainer6;
+    this.trainer7 = trainer7;
+    this.trainer8 = trainer8;
+    this.trainer9 = trainer9;
+    this.trainer10 = trainer10;
+    this.trainer11 = trainer11;
+    this.trainer12 = trainer12;
+    this.trainer13 = trainer13;
+    this.trainer14 = trainer14;
+    this.trainer15 = trainer15;
+    this.trainer16 = trainer16;
+    this.trainer17 = trainer17;
+    this.trainer18 = trainer18;
+    this.trainer19 = trainer19;
+    this.trainer20 = trainer20;
+  }
 }

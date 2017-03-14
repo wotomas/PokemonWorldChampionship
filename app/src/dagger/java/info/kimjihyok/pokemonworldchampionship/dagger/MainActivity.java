@@ -3,6 +3,7 @@ package info.kimjihyok.pokemonworldchampionship.dagger;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import javax.inject.Inject;
 
@@ -134,6 +135,10 @@ public class MainActivity extends AppCompatActivity {
 
     MainActivityComponent component = DaggerMainActivityComponent
       .builder()
+      .pokemonVersionModule(new PokemonVersionModule())
+      .gymLeaderModule(new GymLeaderModule())
+      .trainerModule(new TrainerModule())
+      .pokemonModule(new PokemonModule())
       .build();
     component.inject(this);
 
