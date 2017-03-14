@@ -16,17 +16,30 @@ public class Generator {
   private static final String POKEMON = "Pokemon";
   private static final String POKEMON_VERSION = "PokemonVersion";
 
-  private static final String DAGGER_PACKAGE_PATH = "info.kimjihyok.pokemonworldchampionship.generated.trainer.dg";
+  private static final String DAGGER_PACKAGE_PATH = "info.kimjihyok.pokemonworldchampionship.dagger.generated";
   private static final String DAGGER_APP_PATH = "../app/src/dagger/java/";
-  private static final String DAGGER_GENERATOR_PATH = "../classgenerator/src/dagger/java/";
+  private static final String DAGGER_GENERATOR_PATH = "../classgenerator/src/main/java/";
 
   public static void main(String[] args) throws IOException, ClassNotFoundException {
     System.out.println("PokemonWorldChampionship DI framework comparison code generation begins!");
 
     createPokemon();
-    createTrainers();
-    createPokemonVersions();
+    try {
+      createTrainers();
+    } catch (ClassNotFoundException e) {
+      System.out.println("Pokemon Generated Complete! Run './gradlew injectAll' again!");
+      return;
+    }
+
+    try {
+      createPokemonVersions();
+    } catch (ClassNotFoundException e) {
+      System.out.println("Pokemon Trainer Generated Complete! Run './gradlew injectAll' again!");
+      return;
+    }
+
     createGymLeaders();
+    System.out.println("All Classes Generated Complete!");
   }
 
   private static void createGymLeaders() throws ClassNotFoundException, IOException {
@@ -84,7 +97,7 @@ public class Generator {
       TypeSpec.Builder trainerBuilder = TypeSpec.classBuilder(TRAINER + i)
         .addModifiers(Modifier.PUBLIC);
       for(int j = 1; j < 7; j++) {
-        FieldSpec pokemons = FieldSpec.builder(Class.forName(DAGGER_PACKAGE_PATH + "." + POKEMON + j), POKEMON.toLowerCase() + j)
+        FieldSpec pokemons = FieldSpec.builder(Class.forName(DAGGER_PACKAGE_PATH + "." + POKEMON.toLowerCase() + "." + POKEMON + j), POKEMON.toLowerCase() + j)
           .addAnnotation(Inject.class)
           .addModifiers(Modifier.PUBLIC)
           .build();
