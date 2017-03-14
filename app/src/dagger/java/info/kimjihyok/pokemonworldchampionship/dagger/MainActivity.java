@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import javax.inject.Inject;
 
+import info.kimjihyok.pokemonworldchampionship.DaggerMainActivityComponent;
+import info.kimjihyok.pokemonworldchampionship.MainActivityComponent;
 import info.kimjihyok.pokemonworldchampionship.R;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader1;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader10;
@@ -41,6 +43,7 @@ import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLea
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader38;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader39;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader4;
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader40;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader5;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader6;
 import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader7;
@@ -128,6 +131,11 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    MainActivityComponent component = DaggerMainActivityComponent
+      .builder()
+      .build();
+    component.inject(this);
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
       reportFullyDrawn();

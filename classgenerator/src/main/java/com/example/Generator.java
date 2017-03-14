@@ -5,10 +5,14 @@ import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.inject.Inject;
 import javax.lang.model.element.Modifier;
+
+import info.kimjihyok.pokemonworldchampionship.dagger.generated.gymleader.GymLeader1;
 
 public class Generator {
   private static final String GYM_LEADER = "GymLeader";
@@ -22,6 +26,20 @@ public class Generator {
 
   public static void main(String[] args) throws IOException, ClassNotFoundException {
     System.out.println("PokemonWorldChampionship DI framework comparison code generation begins!");
+    //PrintWriter out = new PrintWriter(new FileWriter("output.txt", true), true);
+    //String message = "";
+    //for(int i = 1; i < 201; i++) {
+    //  message = "@Provides" + "\n"
+    //    + "public Trainer" + i + " " + "provideTrainer" + i + "() {" + "\n"
+    //    + "return new Trainer" + i + "();" + "\n"
+    //    + "}" + "\n\n";
+    //  out.write(message);
+    //}
+    //out.close();
+    if (true) {
+      throw new IllegalStateException("STOP!");
+    }
+
 
     createPokemon();
     try {
@@ -72,7 +90,7 @@ public class Generator {
       TypeSpec.Builder pokemonVersion = TypeSpec.classBuilder(POKEMON_VERSION + i)
         .addModifiers(Modifier.PUBLIC);
 
-      for(int j = 1; j < 801; j++) {
+      for(int j = 1; j < 201; j++) {
         FieldSpec trainers = FieldSpec.builder(Class.forName(DAGGER_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
           .addAnnotation(Inject.class)
           .addModifiers(Modifier.PUBLIC)
@@ -93,7 +111,7 @@ public class Generator {
   }
 
   private static void createTrainers() throws IOException, ClassNotFoundException {
-    for(int i = 1; i < 801; i++) {
+    for(int i = 1; i < 201; i++) {
       TypeSpec.Builder trainerBuilder = TypeSpec.classBuilder(TRAINER + i)
         .addModifiers(Modifier.PUBLIC);
       for(int j = 1; j < 7; j++) {
