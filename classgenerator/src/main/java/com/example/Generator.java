@@ -21,6 +21,8 @@ public class Generator {
 
   private static final String DAGGER_PACKAGE_PATH = "info.kimjihyok.pokemonworldchampionship.dagger.generated";
   private static final String DAGGER_APP_PATH = "../app/src/dagger/java/";
+  private static final String TOOTHPICK_PACKAGE_PATH = "info.kimjihyok.pokemonworldchampionship.toothpick.generated";
+  private static final String TOOTHPICK_APP_PATH = "../app/src/toothpick/java/";
   private static final String DAGGER_GENERATOR_PATH = "../classgenerator/src/main/java/";
 
   public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -49,6 +51,9 @@ public class Generator {
       TypeSpec.Builder gymLeaders = TypeSpec.classBuilder(GYM_LEADER + i)
         .addModifiers(Modifier.PUBLIC);
 
+      TypeSpec.Builder toothPickGymLeaders = TypeSpec.classBuilder(GYM_LEADER + i)
+        .addModifiers(Modifier.PUBLIC);
+
       MethodSpec.Builder constructorBuilder = MethodSpec.constructorBuilder()
         .addAnnotation(Inject.class)
         .addModifiers(Modifier.PUBLIC);
@@ -58,11 +63,17 @@ public class Generator {
           .addModifiers(Modifier.PUBLIC)
           .build();
 
+        FieldSpec toothPickTrainers = FieldSpec.builder(Class.forName(TOOTHPICK_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
+          .addAnnotation(Inject.class)
+          .addModifiers(Modifier.PUBLIC)
+          .build();
+
         constructorBuilder
           .addParameter(Class.forName(DAGGER_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
           .addStatement("this.$N = $N", TRAINER.toLowerCase() + j, TRAINER.toLowerCase() + j);
 
         gymLeaders.addField(trainers);
+        toothPickGymLeaders.addField(toothPickTrainers);
       }
 
       MethodSpec constructor = constructorBuilder.build();
@@ -71,17 +82,27 @@ public class Generator {
         .addMethod(constructor)
         .build();
 
+      TypeSpec toothPickGymLeader = toothPickGymLeaders
+        .build();
+
       JavaFile javaFile = JavaFile.builder(DAGGER_PACKAGE_PATH + "." + GYM_LEADER.toLowerCase(), gymLeader)
         .build();
 
+      JavaFile toothPickJavaFile = JavaFile.builder(TOOTHPICK_PACKAGE_PATH + "." + GYM_LEADER.toLowerCase(), toothPickGymLeader).build();
+
+      toothPickJavaFile.writeTo(new File(TOOTHPICK_APP_PATH));
       javaFile.writeTo(new File(DAGGER_APP_PATH));
       javaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
+      toothPickJavaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
     }
   }
 
   private static void createPokemonVersions() throws ClassNotFoundException, IOException {
     for(int i = 1; i < 16; i++) {
       TypeSpec.Builder pokemonVersion = TypeSpec.classBuilder(POKEMON_VERSION + i)
+        .addModifiers(Modifier.PUBLIC);
+
+      TypeSpec.Builder toothPickPokemonVersion = TypeSpec.classBuilder(POKEMON_VERSION + i)
         .addModifiers(Modifier.PUBLIC);
 
       MethodSpec.Builder constructorBuilder = MethodSpec.constructorBuilder()
@@ -93,11 +114,17 @@ public class Generator {
           .addModifiers(Modifier.PUBLIC)
           .build();
 
+        FieldSpec toothPickTrainers = FieldSpec.builder(Class.forName(TOOTHPICK_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
+          .addAnnotation(Inject.class)
+          .addModifiers(Modifier.PUBLIC)
+          .build();
+
         constructorBuilder
           .addParameter(Class.forName(DAGGER_PACKAGE_PATH + "." + TRAINER.toLowerCase() + "." + TRAINER + j), TRAINER.toLowerCase() + j)
           .addStatement("this.$N = $N", TRAINER.toLowerCase() + j, TRAINER.toLowerCase() + j);
 
         pokemonVersion.addField(trainers);
+        toothPickPokemonVersion.addField(toothPickTrainers);
       }
 
       MethodSpec constructor = constructorBuilder.build();
@@ -106,11 +133,18 @@ public class Generator {
         .addMethod(constructor)
         .build();
 
+      TypeSpec toothPickVersion = toothPickPokemonVersion
+        .build();
+
       JavaFile javaFile = JavaFile.builder(DAGGER_PACKAGE_PATH + "." + POKEMON_VERSION.toLowerCase(), version)
         .build();
 
+      JavaFile toothPickJavaFile = JavaFile.builder(TOOTHPICK_PACKAGE_PATH + "." + POKEMON_VERSION.toLowerCase(), toothPickVersion).build();
+
       javaFile.writeTo(new File(DAGGER_APP_PATH));
       javaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
+      toothPickJavaFile.writeTo(new File(TOOTHPICK_APP_PATH));
+      toothPickJavaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
     }
   }
 
@@ -118,6 +152,10 @@ public class Generator {
     for(int i = 1; i < 201; i++) {
       TypeSpec.Builder trainerBuilder = TypeSpec.classBuilder(TRAINER + i)
         .addModifiers(Modifier.PUBLIC);
+
+      TypeSpec.Builder toothPickTrainerBuilder = TypeSpec.classBuilder(TRAINER + i)
+        .addModifiers(Modifier.PUBLIC);
+
       MethodSpec.Builder constructorBuilder = MethodSpec.constructorBuilder()
         .addAnnotation(Inject.class)
         .addModifiers(Modifier.PUBLIC);
@@ -125,7 +163,14 @@ public class Generator {
         FieldSpec pokemons = FieldSpec.builder(Class.forName(DAGGER_PACKAGE_PATH + "." + POKEMON.toLowerCase() + "." + POKEMON + j), POKEMON.toLowerCase() + j)
           .addModifiers(Modifier.PUBLIC)
           .build();
+
+        FieldSpec toothPickPokemons = FieldSpec.builder(Class.forName(TOOTHPICK_PACKAGE_PATH + "." + POKEMON.toLowerCase() + "." + POKEMON + j), POKEMON.toLowerCase() + j)
+          .addAnnotation(Inject.class)
+          .addModifiers(Modifier.PUBLIC)
+          .build();
+
         trainerBuilder.addField(pokemons);
+        toothPickTrainerBuilder.addField(toothPickPokemons);
 
         constructorBuilder
           .addParameter(Class.forName(DAGGER_PACKAGE_PATH + "." + POKEMON.toLowerCase() + "." + POKEMON + j), POKEMON.toLowerCase() + j)
@@ -139,9 +184,17 @@ public class Generator {
         .addMethod(constructor)
         .build();
 
+      TypeSpec toothPickTrainer = toothPickTrainerBuilder
+        .build();
+
       JavaFile javaFile = JavaFile.builder(DAGGER_PACKAGE_PATH + "." + TRAINER.toLowerCase(), trainer)
         .build();
 
+      JavaFile toothPickJavaFile = JavaFile.builder(TOOTHPICK_PACKAGE_PATH + "." + TRAINER.toLowerCase(), toothPickTrainer)
+        .build();
+
+      toothPickJavaFile.writeTo(new File(TOOTHPICK_APP_PATH));
+      toothPickJavaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
       javaFile.writeTo(new File(DAGGER_APP_PATH));
       javaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
     }
@@ -169,6 +222,11 @@ public class Generator {
       JavaFile javaFile = JavaFile.builder(DAGGER_PACKAGE_PATH + "." + POKEMON.toLowerCase(), pokemon)
         .build();
 
+      JavaFile toothPickJavaFile = JavaFile.builder(TOOTHPICK_PACKAGE_PATH + "." + POKEMON.toLowerCase(), pokemon)
+        .build();
+
+      toothPickJavaFile.writeTo(new File(TOOTHPICK_APP_PATH));
+      toothPickJavaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
       javaFile.writeTo(new File(DAGGER_APP_PATH));
       javaFile.writeTo(new File(DAGGER_GENERATOR_PATH));
     }

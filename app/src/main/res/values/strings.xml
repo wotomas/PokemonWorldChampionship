@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PokemonWorldChampionship</string>
+    <string name="app_name_toothpick">ToothPickPokemon</string>
+    <string name="app_name_dagger">DaggerPokemon</string>
 </resources>
