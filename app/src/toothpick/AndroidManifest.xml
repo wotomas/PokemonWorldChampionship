@@ -7,7 +7,7 @@
         android:label="@string/app_name_toothpick"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="info.kimjihyok.pokemonworldchampionship.none.MainActivity">
+        <activity android:name="info.kimjihyok.pokemonworldchampionship.toothpick.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
